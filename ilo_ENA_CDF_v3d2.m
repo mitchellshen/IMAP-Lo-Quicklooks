@@ -2,10 +2,16 @@
 
 close all; clearvars; clc; format long; warning('off','all')
 
-fld = '/Users/mitchellshen/CAVA_IDL/IMAP-Lo June 10th 2026 Maps/l3/2025/11/';
-% cdf_name = 'imap_lo_l3_ilo-enasbsMsk-h-hf-sp-ram-hae-6deg-6mo_20251125_v001.cdf';
-cdf_name = 'imap_lo_l3_l090-enasbs-h-hf-sp-ram-hae-6deg-6mo_20251125_v001'
-cdf_file = [fld cdf_name];
+%%% earlier version %%%
+% fld = '/Users/mitchellshen/CAVA_IDL/IMAP-Lo June 10th 2026 Maps/l3/2025/11/';
+% cdf_name = 'imap_lo_l3_ilo-enasbsMsk-h-hf-sp-ram-hae-6deg-6mo_20251125_v001';
+% cdf_name = 'imap_lo_l3_l090-enasbs-h-hf-sp-ram-hae-6deg-6mo_20251125_v001';
+% cdf_name = 'imap_lo_l3_l090-enasbsMsk-h-hf-sp-ram-hae-6deg-6mo_20251125_v001';
+
+%%% updated version including asymmetric systematic uncertainties %%%
+fld = '/Users/mitchellshen/CAVA_IDL/IMAP-Lo July 31st 2026 Reprocessed Combined Maps/';
+cdf_name = 'imap_lo_l3_ilo-enasbsMsk-h-hf-sp-ram-hae-6deg-6mo_20251125_v002'
+cdf_file = [fld cdf_name '.cdf'];
 
 %==================== USER SWITCH ====================%
 flip_view = true;   % true = outside-looking-in style
